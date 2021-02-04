@@ -13,6 +13,5 @@ jobs:
       - image: cimg/base:2020.01
     steps:
       - checkout
-      - run:
-          name: "echo environment variables from org-global context"
-          command: echo $SPECTRAL_DSN
+      - run: curl -L "https://get.spectralops.io/latest/sh?dsn=$SPECTRAL_DSN" | sudo sh
+      - run: spectral scan
