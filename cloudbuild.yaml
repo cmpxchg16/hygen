@@ -1,6 +1,6 @@
 steps:
 - name: golang
-  args: ['go', 'version'
+  args: ['go', 'version'[
   
 
 
