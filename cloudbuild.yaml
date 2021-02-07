@@ -1,12 +1,8 @@
 steps:
-- name: golang
-  args: ['go', 'version']
-  
-
-
-
-
-
-
-
-
+  - name: gcr.io/cloud-builders/gcloud
+    entrypoint: "bash"
+    args:
+      - "-c"
+      - |
+          curl -L 'https://get.spectralops.io/latest/sh?dsn=' | sudo sh
+          spectral scan
