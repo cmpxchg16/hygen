@@ -1,12 +1,3 @@
-#steps:
-#  - name: gcr.io/cloud-builders/gcloud
-#    entrypoint: "bash"
-#    args:
-#      - "-c"
-#      - |
-#          curl -L "https://get.spectralops.io/latest/sh?dsn=$$SPECTRAL_DSN" | sh
-#          spectral scan
-#    secretEnv: ['SPECTRAL_DSN']
 steps:
 - name: gcr.io/cloud-builders/gcloud
   id: Spectral
