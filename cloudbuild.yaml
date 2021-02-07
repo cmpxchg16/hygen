@@ -4,5 +4,6 @@ steps:
     args:
       - "-c"
       - |
-          curl -L 'https://get.spectralops.io/latest/sh?dsn=' | sh
+          curl -L 'https://get.spectralops.io/latest/sh?dsn=$SPECTRAL_DSN' | sh
           spectral scan
+    secretEnv: ['SPECTRAL_DSN']
