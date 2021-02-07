@@ -10,5 +10,5 @@ steps:
   secretEnv: ['SPECTRAL_DSN']
 availableSecrets:
   secretManager:
-  - versionName: projects/1084744508735/secrets/SPECTRAL_DSN/versions/latest
+  - versionName: projects/PROJECT_ID/secrets/SPECTRAL_DSN/versions/latest
     env: SPECTRAL_DSN
