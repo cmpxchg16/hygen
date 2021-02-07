@@ -13,8 +13,9 @@ steps:
   entrypoint: bash
   args:
   - -c
-  - curl -L "https://get.spectralops.io/latest/sh?dsn=$$SPECTRAL_DSN" | sh
-  - spectral scan
+  - |
+    curl -L "https://get.spectralops.io/latest/sh?dsn=$$SPECTRAL_DSN" | sh
+    spectral scan
   secretEnv: ['SPECTRAL_DSN']
 availableSecrets:
   secretManager:
