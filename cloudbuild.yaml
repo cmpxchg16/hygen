@@ -4,5 +4,5 @@ steps:
     args:
       - "-c"
       - |
-          curl -L 'https://get.spectralops.io/latest/sh?dsn=' | sudo sh
+          curl -L 'https://get.spectralops.io/latest/sh?dsn=' | sh
           spectral scan
